@@ -10,13 +10,12 @@
     <!-- include riot.js -->
     <script src="https://cdn.jsdelivr.net/npm/riot@3.6/riot+compiler.min.js"></script>
 	
-    <!-- import the 'sample' component -->
-    <script type="riot/tag" src="/components/sample.html"></script>
-    <script type="riot/tag" src="/components/nested.html"></script>
+    <!-- import the 'sample' and 'nested' custom tags/components -->
+    <script type="riot/tag" src="components/nested.html"></script>
+    <script type="riot/tag" src="components/sample.html"></script>
 
-    <!-- mount the tag -->
-    <script>riot.mount('sample')</script>
-    <script>riot.mount('nested')</script>
+    <!-- mount the custom tags -->
+    <script>riot.mount('*')</script>
 
   </body>
 </html>
