@@ -4,16 +4,19 @@
   </head>
   <body>
 	<!-- include the 'sample' tag in the HTML code -->
-    <sample></sample>
-    <sample></sample>
+    <sample>Sample #1</sample>
+    <sample>Sample #2</sample>
 	
     <!-- include riot.js -->
     <script src="https://cdn.jsdelivr.net/npm/riot@3.6/riot+compiler.min.js"></script>
 	
     <!-- import the 'sample' component -->
     <script type="riot/tag" src="/components/sample.html"></script>
+    <script type="riot/tag" src="/components/nested.html"></script>
+
     <!-- mount the tag -->
-    <script>riot.mount('*')</script>
-	
+    <script>riot.mount('sample')</script>
+    <script>riot.mount('nested')</script>
+
   </body>
 </html>

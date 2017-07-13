@@ -1,16 +1,17 @@
 <sample>
-  <h3>{ message }</h3>
+  <h3> <yield /> </h3>
+  <h5>{subheading}</h5>
   <ul>
-    <li each={ techs }>{ name }</li>
+    <nested each={ items } param="{name}">{ name.toUpperCase() }</nested>
   </ul>
 
   <script>
-    this.message = 'Hello, Riot!'
-    this.techs = [
-      { name: 'HTML' },
-      { name: 'JavaScript' },
-      { name: 'CSS' }
-    ]
+    this.subheading = 'Sample subheading'
+    this.items = [
+      { name: 'item 1' },
+      { name: 'item 2' },
+      { name: 'item 3' }
+    ];
   </script>
 
   <style>
