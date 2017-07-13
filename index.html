@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Hello Riot.</title>
+  </head>
+  <body>
+	<!-- include the 'sample' tag in the HTML code -->
+    <sample></sample>
+    <sample></sample>
+	
+    <!-- include riot.js -->
+    <script src="https://cdn.jsdelivr.net/npm/riot@3.6/riot+compiler.min.js"></script>
+	
+    <!-- import the 'sample' component -->
+    <script type="riot/tag" src="/components/sample.html"></script>
+    <!-- mount the tag -->
+    <script>riot.mount('*')</script>
+	
+  </body>
+</html>

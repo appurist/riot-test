@@ -1,0 +1,13 @@
+{
+  "name": "riot-test",
+  "version": "0.0.1",
+  "main": "index.html",
+  "scripts": {
+    "serve": "http-server -p 8181",
+    "server": "http-server -p 8181"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
