@@ -1,7 +1,9 @@
 # riot-test
-Just a quick experiment with Riot.js to check out components, nested components, parameters and yields.
+### Just a quick experiment with Riot.js to check out components, nested components, parameters and yields.
 
-It is very light, does not require anything like browserify or webpack, and this example compiles the custom tags on demand.
+#### If you're relatively new to [Riot.js](http://riotjs.com/), check out `index.html` and the two `.tag` files in the `components` subfolder.
+
+This simple example is very light, focuses only on the simple independence of Riot.js custom web component tags, and does not require anything like browserify or webpack, and this example compiles the custom tags on demand. Riot.js is very lean! Check out this [comparison between Riot and React](http://riotjs.com/compare/)!
 
 To try the code, just copy the files to a web server somewhere, or run `npm start` or `npm serve`.  All those commands do is run http-server on the local folder to serve the files.
 
