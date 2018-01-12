@@ -23,8 +23,8 @@ It then defines a list, iterating over `items` and passing each of those to a `<
     <nested each={ items } param="{name}">{ name.toUpperCase() }</nested>
   </ul>
 ```
-It also demonstrates the use of arbitrary Javascript code within a template, within a pare of braces, 
-which places the uppercase version of the name within the tag payload (yield).
+It also demonstrates the use of arbitrary Javascript code within a template, within a pair of braces, 
+which places the uppercase version of the name within the tag payload (yield) itself. So this provides `param="{name}"` to the tag, and passes `name.toUpperCase()` as the "body" of the tag, which the nested component displays in its `<yield />`.
 
 The `<nested>` component (defined in `nested.tag`) provides this as an `<li>` value for the list:
 ```
